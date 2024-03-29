@@ -1,4 +1,4 @@
-﻿namespace Digital
+﻿namespace MouseOv_VolClock
 {
     partial class DigitalClock
     {
@@ -29,13 +29,13 @@
             // 
             this.TimeLable.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TimeLable.AutoSize = true;
-            this.TimeLable.Font = new System.Drawing.Font("Britannic Bold", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TimeLable.Location = new System.Drawing.Point(78, 52);
-            this.TimeLable.Margin = new System.Windows.Forms.Padding(200);
+            this.TimeLable.Font = new System.Drawing.Font("Britannic Bold", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TimeLable.Location = new System.Drawing.Point(83, 46);
+            this.TimeLable.Margin = new System.Windows.Forms.Padding(300, 308, 300, 308);
             this.TimeLable.Name = "TimeLable";
-            this.TimeLable.Size = new System.Drawing.Size(125, 30);
+            this.TimeLable.Size = new System.Drawing.Size(104, 36);
             this.TimeLable.TabIndex = 0;
-            this.TimeLable.Text = "00:00:00";
+            this.TimeLable.Text = "00:00";
             this.TimeLable.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.TimeLable.Leave += new System.EventHandler(this.TimeLable_Leave);
             this.TimeLable.MouseEnter += new System.EventHandler(this.TimeLable_MouseEnter);
@@ -48,13 +48,14 @@
             // 
             // DigitalClock
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 134);
+            this.ClientSize = new System.Drawing.Size(268, 128);
             this.ControlBox = false;
             this.Controls.Add(this.TimeLable);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Location = new System.Drawing.Point(1500, 500);
+            this.Location = new System.Drawing.Point(950, 500);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "DigitalClock";
