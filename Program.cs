@@ -4,21 +4,19 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Digital
+namespace MouseOv_VolClock
 {
-    static class Program
+    internal static class Program
     {
-
-
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DigitalClock());
+            Application.Run(new MouseOv_VolClock.DigitalClock());
         }
-
-
     }
-
 }

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 
 
-namespace Digital
+namespace MouseOv_VolClock
 {
     public partial class DigitalClock : Form
     {
@@ -27,7 +27,7 @@ namespace Digital
 
         private void SecondTimer_Tick(object sender, EventArgs e)
         {
-            this.TimeLable.Text = DateTime.Now.ToString("hh:mm:ss");
+            this.TimeLable.Text = DateTime.Now.ToString("hh:mm");
             if (TurnDownVol)
                 {keybd_event((byte)Keys.VolumeDown, 0, 0, 0);}
             if (TurnUpVol)
@@ -38,8 +38,8 @@ namespace Digital
         {
             int formH = this.Height;
             int formW = this.Width;
-            this.TimeLable.Top = (this.Height / 2) - 25;
-            this.TimeLable.Left = (this.Width / 2) - 70;
+            this.TimeLable.Top = (this.Height / 2) - 20;
+            this.TimeLable.Left = (this.Width / 2) - 40;
         }
 
         private void SoundCode()
